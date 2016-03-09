@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BDQ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <script src="../js/javascript.js"></script>
+    
+  </head>
+  <body>
+              <header>
+                    <div id="logo-zenit" class="float-l">
+                                    <a href="http://www.unb.br/" target="_blank"><img src="../imagens/Logo.jpg" /></a>
+                    </div>
+                     <input type="checkbox" id="control-nav" />
+                     <label for="control-nav" class="control-nav"></label>
+                      <label for="control-nav" class="control-nav-close"></label>
+           
+            <nav class="float-r">
+              <ul class="list-auto">
+                 <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Acesso Institucional</a>
+                </li>
+                <li>
+                  <a href="#">Acesso ao Moodle</a>
+                </li>
+                <li>
+                  <a href="#">Acesso ao SAE</a>
+                </li>
+ 				<li>
+                  <a href="#">Monitoria</a>
+                </li>
+				<li>
+                  <a href="#">Colaboradores</a>
+                </li>
+              </ul>
+              
+            </nav>
+           </header>
+    
+       <section class="body-principal">
+        <div id="text-principal">
+        <h1 id="body-normal">BDQ - Banco de Quest&otilde;es</h1>         
+        </div>
+
+      </section>
+
+      <section class="perspectivas-principal">
+      <hr />  
+	<section class="lateral-menu-conteudo">
+		<div class="image">
+			<img src="../imagens/titleBar.png" style="float:center; width:100%" />
+			<div id="menu_title_bar">
+				Conte&uacute;dos
+			</div>
+	 	</div>
+		<ul>
+			<hr />
+				<li><a href="#">Introdu&ccedil;&atilde;o</a></li>
+			<hr />
+				<li><a href="bdq_aprendizagemConstrutivista.html">Aprendizagem Construtivista</a></li>
+			<hr />
+				<li><a href="bdq_bancoDeQuestoes.html">Banco de Quest&otilde;es</a></li>
+			<hr />
+				<li><a href="bdq_bancoDeQuestoesInterativas.html">Pesquisa Banco de Quest&otilde;es Interativas</a></li>
+			<hr />	
+				<li><a href="bdq_usandoBDQNoSae.html">Usando BDQ no SAE</a></li>
+			<hr />	
+				<li><a href="bdq_exemplosBDQ.html">Exemplos no BDQ</a></li>
+			<hr />
+				<li><a href="exercicios/bdq_exerExemplosBDQ.html">Exerc&iacute;cios sobre Exemplos no BDQ</a></li>
+			<hr />
+				<li><a href="bdq_bibliografia.html">Bibliografia</a></li>
+			<hr />	
+		</ul>
+	</section>
+      <div id="content_text">
+		<div class="title_bar">
+			<img src="../imagens/greenbar.png" style="float:center; width:100%" />
+			<h2>Exemplos no BDQ</h2>
+		 </div>
+	
+        <p>Para cadastrar quest&otilde;es de qualquer tipo, primeiramente voc&ecirc; deve estar logado no SAE (Sistema de Apoio Educacional) no perfil de Professor. Para isso, acesse o <a href="http://sae.ucb.br/sae/" target="_blank">SAE</a>, preencha o campo Usu&aacute;rio e Senha, selecione a op&ccedil;&atilde;o Professor e clique em Entrar, caso os dados estejam corretos, voc&ecirc; ser&aacute; redirecionado para a p&aacute;gina principal do SAE.</p>
+        <p>Clique na esfera "Quest&otilde;es". Ao clicar nesta esfera, no menu lateral &agrave; sua esquerda aparecer&atilde;o as op&ccedil;&otilde;es: Quest&otilde;es, Listas, Hist&oacute;rico, Corre&ccedil;&otilde;es e Teste. </p>
+        <p>Clique na op&ccedil;&atilde;o "Quest&otilde;es", a primeira do menu lateral. Ao clicar nesta op&ccedil;&atilde;o, aparecer&atilde;o logo abaixo dela, as op&ccedil;&atilde;o Ver, Responder e An&aacute;lise. Clique na op&ccedil;&atilde;o "Ver".</p>
+        <p id="preencher_lacuna">Na nova tela que aparecer&aacute;, no canto inferior esquerdo, h&aacute; a op&ccedil;&atilde;o "Cadastrar" em azul, clique nesta op&ccedil;&atilde;o.</p>
+        <p>Aparecer&aacute; uma nova tela para que o cadastro da quest&atilde;o seja feito. Primeiramente voc&ecirc; deve preencher o campo Enunciado, usando at&eacute; 750 caracteres, e sem utilizar figuras.</p>
+        <p>A partir desse passo, clique na op&ccedil;&atilde;o do tipo de quest&atilde;o a qual voc&ecirc; deseja cadastrar, para ver o tutorial com o passo-a-passo de como cadastr&aacute;-la.</p>
+
+        <br>
+        <a href="javaScript:abreFechaTopico(lacunas)" onclick="toggle('lacunas');"><h3>Como cadastrar uma quest&atilde;o do tipo "Preencher Lacuna"?</h3></a>
+        <div id="lacunas" style="display:none">
+           <p>1. No campo "Tipo de quest&atilde;o" selecione a op&ccedil;&atilde;o "Lacunas". Aparecer&atilde;o v&aacute;rios campos de texto logo abaixo.</p>
+           <p>2. No campo de texto "Frase", coloque a frase a qual voc&ecirc; quer que o aluno preencha, e onde voc&ecirc; deseja posicionar as lacunas a serem preenchidas coloque um "#", por exemplo, se na frase "Sistema de Apoio Educacional", voc&ecirc; quer deixar uma lacuna na palavra "Apoio" (Sistema de _______ Educacional), voc&ecirc; dever&aacute; preencher o campo da seguinte forma: Sistema de # Educacional.</p>
+           <p>3. No campo de texto "Respota correta", coloque a resposta correta para o preenchimento da lacuna, no exemplo anterior seria "Apoio".</p>
+           <p>4. Caso haja alguma outra palavra ou express&atilde;o que preencha a lacuna corretamente, al&eacute;m da colocada no campo "Respota Correta", coloque-a no campo "Resposta alternativa".</p>
+           <p>5. Marque a op&ccedil;&atilde;o "Diferenciar mai&uacute;sculas e min&uacute;sculas" caso o fato de o aluno escrever a resposta em letras mai&uacute;sculas ou min&uacute;sculas fa&ccedil;a diferen&ccedil;a na corre&ccedil;&atilde;o, como no caso de exemplo &eacute; correto tanto o aluno responder "Apoio" quanto "apoio" ou "APOIO", a op&ccedil;&atilde;o n&atilde;o foi marcada.</p>
+           <p>6. No campo "Coment&aacute;rio certo", preencha a mensagem que voc&ecirc; quer que o aluno visualize caso ele acerte a quest&atilde;o, no caso do exemplo foi preenchida a mensagem "Parab&eacute;ns, voc&ecirc; preencheu corretamente!".</p>
+           <p>7. No campo "Coment&aacute;rio errado", preencha a mensagem que voc&ecirc; quer que o aluno visualize caso ele erre a quest&atilde;o, no caso do exemplo foi preenchida a mensagem "Resposta errada! A sigla SAE significa Sistema de Apoio Educacional."</p>
+           <p>8. <a href="#multipla_escolha_title" onclick="javaScript:startMenuAll(lacunas, multipla_escolha, v_ou_f, escolha_multipla, aberta);">Clique aqui</a> para seguir para o passo-a-passo, onde voc&ecirc; ver&aacute; como preencher os outros campos, que s&atilde;o comuns &agrave; todas as quest&otilde;es.
+
+           <figure class="image_center">
+                 <img src="imagens/lacunas_exemplo.png" style="width:100%"/>
+                 <figcaption>Figura 1 - Exemplo de quest&atilde;o do tipo Lacunas.</figcaption>
+           </figure>
+         </div>    
+
+        <br>
+        <a href="javaScript:abreFechaTopico(multipla_escolha)" onclick="toggle('multipla_escolha');"><h3 id=multipla_escolha_title>Como cadastrar uma quest&atilde;o do tipo "M&uacute;ltipla Escolha"?</h3></a>
+        <div id="multipla_escolha" style="display:none">
+            <p>1. No campo "Tipo de quest&atilde;o" selecione a op&ccedil;&atilde;o "M&uacute;ltipla Escolha". Aparecer&atilde;o v&aacute;rios campos de texto logo abaixo.</p>
+            <p>2. No campo de texto "Op&ccedil;&atilde;o 1", coloque a frase a qual voc&ecirc; quer que seja a primeira alternativa, no exemplo, a primeira alternativa &eacute; "Sistema de Aprendizagem Educacional". No campo "Op&ccedil;&atilde;o 2", coloque a frase a qual voc&ecirc; quer que seja a segunda alternativa, e assim sucessivamente, como na imagem abaixo (Figura 2).</p>
+            <p>3. Marque qual &eacute; a op&ccedil;&atilde;o correta, no exemplo a op&ccedil;&atilde;o correta &eacute; a "Op&ccedil;&atilde;o 4".</p>
+            <p>4. No campo "Coment&aacute;rio 1", preencha a mensagem que voc&ecirc; quer que o aluno que escolheu esta op&ccedil;&atilde;o visualize, no exemplo, o coment&aacute;rio foi "Resposta errada! A resposta correta seria Sistema de Apoio Educacional.", escolha uma mensagem coerente para cada op&ccedil;&atilde;o, como no exemplo.</p>
+            <p>5. <a href="#multipla_escolha_title" onclick="javaScript:startMenuAll(lacunas, multipla_escolha, v_ou_f, escolha_multipla, aberta);">Clique aqui</a> para seguir para o passo-a-passo, onde voc&ecirc; ver&aacute; como preencher os outros campos, que s&atilde;o comuns &agrave; todas as quest&otilde;es.</p>
+
+            <figure class="image_center">
+              <img src="imagens/multipla_escolha.png" style="width:100%"/>
+                <figcaption>Figura 2 - Exemplo de quest&atilde;o do tipo M&uacute;ltipla Escolha.</figcaption>
+            </figure>
+        </div>
+
+        <br>
+        <a href="javaScript:abreFechaTopico(v_ou_f)" onclick="toggle('v_ou_f');"><h3>Como cadastrar uma quest&atilde;o do tipo "Verdadeiro ou Falso"?</h3></a>
+        <div id="v_ou_f" style="display:none">
+            <p>1. No campo "Tipo de quest&atilde;o" selecione a op&ccedil;&atilde;o "V ou F".</p>
+            <p>2. Na op&ccedil;&atilde;o "Resposta correta", marque se a frase que voc&ecirc; colocou no enunciado &eacute; Verdadeira ou Falsa. No caso do exemplo &eacute; Verdadeira.</p>
+            <p>3. Na op&ccedil;&atilde;o "Coment&aacute;rio para acerto", coloque a frase que voc&ecirc; quer que o aluno visualize caso ele marque a op&ccedil;&atilde;o correta. No exemplo a frase foi "Parab&eacute;ns, o significado da sigla est&aacute; correto!".</p>
+            <p>4. Na op&ccedil;&atilde;o "Coment&aacute;rio para erro", coloque a frase que voc&ecirc; quer que o aluno visualize caso ele marque a op&ccedil;&atilde;o incorreta. No exemplo a frase foi "Resposta errada! o significado da  sigla est&aacute; correto!".</p>
+            <p>5. <a href="#multipla_escolha_title" onclick="javaScript:startMenuAll(lacunas, multipla_escolha, v_ou_f, escolha_multipla, aberta);">Clique aqui</a> para seguir para o passo-a-passo, onde voc&ecirc; ver&aacute; como preencher os outros campos, que s&atilde;o comuns &agrave; todas as quest&otilde;es.</p>
+
+            <figure class="image_center">
+              <img src="imagens/v_ou_f.png" style="width:100%"/>
+                <figcaption>Figura 3 - Exemplo de quest&atilde;o do tipo Verdadeiro ou Falso.</figcaption>
+            </figure>
+        </div>
+
+        <br>
+        <a href="javaScript:abreFechaTopico(escolha_multipla)" onclick="toggle('escolha_multipla');"><h3>Como cadastrar uma quest&atilde;o do tipo "Escolha M&uacute;ltipla"?</h3></a>
+        <div id="escolha_multipla" style="display:none">
+            <p>1. No campo "Tipo de quest&atilde;o" selecione a op&ccedil;&atilde;o "Escolha M&uacute;ltipla". Aparecer&atilde;o v&aacute;rios campos de texto logo abaixo.</p>
+            <p>2. No campo de texto "Op&ccedil;&atilde;o 1", coloque a frase a qual voc&ecirc; quer que seja a primeira alternativa, no exemplo, a primeira alternativa &eacute; "V ou F". No campo "Op&ccedil;&atilde;o 2", coloque a frase a qual voc&ecirc; quer que seja a segunda alternativa, e assim sucessivame, como na imagem de exemplo (Figura 4).</p>
+            <p>3. Marque quais s&atilde;o as op&ccedil;&otilde;es corretas, caso voc&ecirc; tenha colocado somente uma op&ccedil;&atilde;o correta, voc&ecirc; tamb&eacute;m pode marcar apenas uma op&ccedil;&atilde;o. No exemplo todas as op&ccedil;&otilde;es est&atilde;o corretas.</p>
+            <p>4. Na op&ccedil;&atilde;o "Coment&aacute;rio Certo", coloque a frase que voc&ecirc; quer que o aluno visualize caso ele marque as op&ccedil;&otilde;es corretas. No exemplo a frase foi "Resposta correta! Todos os tipos de quest&atilde;o listados est&atilde;o dispon&iacute;veis no SAE!".</p>
+            <p>5. Na op&ccedil;&atilde;o "Coment&aacute;rio Errado", coloque a frase que voc&ecirc; quer que o aluno visualize caso ele n&atilde;o marque todas as op&ccedil;&otilde;es corretas ou nenhuma delas. No exemplo a frase foi "Resposta errada! Todos os tipos de quest&atilde;o listados est&atilde;o dispon&iacute;veis no SAE!".
+            <p>6. <a href="#multipla_escolha_title" onclick="javaScript:startMenuAll(lacunas, multipla_escolha, v_ou_f, escolha_multipla, aberta);">Clique aqui</a> para seguir para o passo-a-passo, onde voc&ecirc; ver&aacute; como preencher os outros campos, que s&atilde;o comuns &agrave; todas as quest&otilde;es.</p>
+
+            <figure class="image_center">
+              <img src="imagens/escolha_multipla.png" style="width:100%"/>
+                <figcaption>Figura 4 - Exemplo de quest&atilde;o do tipo Escolha M&uacute;ltipla.</figcaption>
+            </figure>
+        </div>
+
+        <br>
+        <a href="javaScript:abreFechaTopico(aberta)" onclick="toggle('aberta');"><h3>Como cadastrar uma quest&atilde;o do tipo "Quest&atilde;o Aberta"?</h3></a>
+        <div id="aberta" style="display:none">        
+            <p>1. No campo "Tipo de quest&atilde;o" selecione a op&ccedil;&atilde;o "Aberta". Aparecer&aacute; uma grande caixa de texto logo abaixo, como a do Enunciado.</p>
+            <p>2. Na caixa de texto escreva a resposta referente ao enunciado que voc&ecirc; colocou para a quest&atilde;o, utilizando at&eacute; 500 caracteres. Como esta &eacute; uma quest&atilde;o discursiva, a corre&ccedil;&atilde;o n&atilde;o &eacute; autom&aacute;tica, isto &eacute;, o professor dever&aacute; corrigi-la.</p>
+            <p>3. <a href="#multipla_escolha_title" onclick="javaScript:startMenuAll(lacunas, multipla_escolha, v_ou_f, escolha_multipla, aberta);">Clique aqui</a> para seguir para o passo-a-passo, onde voc&ecirc; ver&aacute; como preencher os outros campos, que s&atilde;o comuns &agrave; todas as quest&otilde;es.</p>
+        
+            <figure class="image_center">
+              <img src="imagens/aberta.png" style="width:100%"/>
+                <figcaption>Figura 5 - Exemplo de quest&atilde;o do tipo Aberta.</figcaption>
+            </figure>
+        </div>
+
+        <br><br>
+        <h3>Preenchendo os demais campos</h3>
+
+        <p>Na op&ccedil;&atilde;o de "Discrimina&ccedil;&atilde;o" coloque o quanto esta quest&atilde;o &eacute; relevante para avalia&ccedil;&atilde;o do aluno, isto &eacute;, o fato do aluno acertar esta quest&atilde;o significa que ele sabe muit&iacute;ssimo, muito, pouco ou pouqu&iacute;ssimo sobre o conte&uacute;do?</p>
+        <p>Na op&ccedil;&atilde;o "Dificuldade", coloque a dificuldade da quest&atilde;o, se &eacute; f&aacute;cil, m&eacute;dia ou dif&iacute;cil.</p>
+        <p>Na op&ccedil;&atilde;o "Categoria", voc&eacute; dever&aacute; indicar se a quest&atilde;o &eacute; de Revis&atilde;o, indicando que o exerc&iacute;cio &eacute; a revis&atilde;o de um conte&uacute;do abordado em sala de aula, de Fixa&ccedil;&atilde;o, indicando que o exerc&iacute;cio exige que o aluno reflita sobre a situa&ccedil;&atilde;o e aplica&ccedil;&atilde;o do conte&uacute;do explorado, ou Avaliativa, que s&oacute; poder&aacute; ser disponibilizada ao aluno
+        atrav&eacute;s de listas de exerc&iacute;cios.</p>
+        <p>Marque para quais m&oacute;dulos a quest&atilde;o servir&aacute;, se ser&aacute; apenas para o ambiente de aprendizagem, onde o aluno responde quest&otilde;es para exercitar seu conhecimento sobre o conte&uacute;do, ou para o ambiente de avalia&ccedil;&atilde;o, onde o aluno responde testes avaliativos, ou para ambos.</p> 
+        <p>Na op&ccedil;&atilde;o "Tempo (segundos)", coloque o tempo m&eacute;dio de respota da quest&atilde;o em segundos, por exemplo, se voc&ecirc; acha que um aluno com conhecimento do conte&uacute;do demora 1 minuto para responder a quest&atilde;o, coloque 60 segundos, como na imagem do exemplo (Figura 5).</p>
+        <p>Na op&ccedil;&atilde;o "Disciplina", selecione a disciplina a qual a quest&atilde;o &eacute; referente, e posteriormente, selecione tamb&eacute;m o conte&uacute;do sobre o qual a disciplina aborda.</p>
+     
+
+         <figure class="image_center">
+              <img src="imagens/partes_comuns.png" style="width:100%"/>
+                <figcaption>Figura 6 - Exemplo de quest&atilde;o do tipo Verdadeiro ou Falso com preenchimento de todos os campos.</figcaption>
+            </figure>
+
+        <p>Agora, clique em "Visualizar" para ver como a quest&atilde;o ficou, se a visualiza&ccedil;&atilde;o n&atilde;o foi gerada, verifique se voc&ecirc; se esqueceu de preencher algum campo. Caso haja algum erro, clique em corrigir para voltar aos dados da quest&atilde;o, caso esteja tudo correto, clique em "Confirmar" e sua quest&atilde;o estar&aacute; cadastrada.</p>
+        
+         <figure class="image_center">
+              <img src="imagens/visualizar_questao.png"/>
+                <figcaption>Figura 7 - Visualiza&ccedil;&atilde;o de Quest&atilde;o.</figcaption>
+            </figure>      
+
+
+        </section>
+                        
+        <footer class="copyright">
+                        
+                        <p class="footer-copy" >
+                            Copyright &copy; - Universidade de Bras&iacute;lia - 2016 
+                        </p>                     
+        </footer>
+
+   </body>
+</html>    
