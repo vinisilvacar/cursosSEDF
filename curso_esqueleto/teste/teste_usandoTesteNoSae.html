@@ -88,39 +88,88 @@
 			<h2>Usando o Módulo Teste no SAE</h2>
 		 </div>
 
-        <p>A principal atividade do professor nesse m&oacute;dulo &eacute; relacionada ao cadastramento de quest&otilde;es de maneira que o aluno possa ter melhor acompanhamento do SAE. H&aacute; nesse m&oacute;dulo a possibilidade de cadastrar <b>Quest&otilde;es Avulsas</b>, que consiste em disponibilizar as quest&otilde;es para os alunos poderem responder quando desejarem, contribuindo para o estudo extraclasse deles; e criar <b>Listas</b>, que constitui em preparar quest&otilde;es que ficar&atilde;o dispon&iacute;veis aos alunos apenas em um determinado intervalo de tempo, em que pode ser atribu&iacute;da uma senha a esse conjunto de quest&otilde;es para liberar a realiza&ccedil;&atilde;o da lista pelos alunos.
-        </p>
-
         <figure class="image_center">
             <img src="imagens/tecnologiaEducacional.jpeg"/>
               <figcaption>Figura 1 - Tecnologia na Educa&ccedil;&atilde;o.</figcaption>
           </figure>
 
-        <p>As quest&otilde;es classificadas como avulsas n&atilde;o est&atilde;o, obrigatoriamente, vinculadas a nenhuma lista de exerc&iacute;cios, mas permanecem dispon&iacute;veis no ambiente, sendo relacionadas a cada conte&uacute;do (disciplina). Estas quest&otilde;es devem ser realizadas pelos alunos &agrave; medida que estes v&atilde;o avan&ccedil;ando nos conte&uacute;dos, respeitando sempre as defini&ccedil;&otilde;es de todo o per&iacute;odo de aprendizagem.
+        <p>No Módulo Teste, o cadastro de questões é realizado pelo usuário com perfil de professor, onde são informados os dados do enunciado e a respectiva resposta correta da questão (item). Ao cadastrar uma questão, o professor informa o parâmetro da discriminação inicial (pouquíssimo, pouco, muito, muitíssimo), sendo os demais parâmetros iniciais da questão definidos automaticamente de acordo com o tipo de questão a ser cadastrada.
         </p>
 
-        <p>O recurso de elabora&ccedil;&atilde;o de listas de exerc&iacute;cios interativos &eacute; fornecido somente ao professor, que controla a elabora&ccedil;&atilde;o de uma lista com exerc&iacute;cios que variam em tipo de quest&atilde;o, n&iacute;vel de dificuldade e categoria, conforme ele acredite ser mais conveniente a aprendizagem de seus alunos. 
+        <p>O valor inicial do parâmetro da dificuldade do item foi definido de acordo com o tipo de questão que está sendo cadastrada na base de dados do Módulo Teste. Assim, as questões de V ou F foram classificadas como questões fáceis e atribuídas o valor 0. Já as questões de Múltipla Escolha foram classificadas como questões de dificuldade média e atribuídas o valor 1. E por fim, as questões de Escolha Múltipla foram classificadas como questões difíceis e atribuídas o valor 2, uma vez que esse tipo de questão apresenta quatro alternativas com 15 combinações possíveis de resposta correta para a questão. Cabe ressaltar que a faixa de valores da dificuldade vai de -3 até +3, conforme a TRI.
         </p>
 
-        <p>Cada uma das listas deve ser cadastrada de acordo com sua categoria, respeitando a categoria das quest&otilde;es (revis&atilde;o, fixa&ccedil;&atilde;o e avaliativa). No entanto, estas listas podem conter quest&otilde;es com categorias diferentes a sua pr&oacute;pria defini&ccedil;&atilde;o, mas somente as listas avaliativas podem incluir quest&otilde;es definidas com esta mesma categoria (avaliativa). 
+            <table style="border:solid 2px" width=90% height=50% align=center>
+                  <tr>
+                    <th>Tipo de Questão</th>
+                    <th>Dificuldade</th> 
+                    <th>Valor</th>     
+                  </tr>
+                  <tr>
+                    <td align=center>V ou F</td>
+                    <td align=center>Fácil</td>
+                    <td align=center>Zero (0)</td>     
+                  </tr>
+                  <tr>
+                    <td align=center>Múltipla Escolha</td>
+                    <td align=center>Média</td>    
+                    <td align=center>Um (1)</td> 
+                  </tr>
+                  <tr>
+                    <td align=center>Escolha MúltiplA</td>
+                    <td align=center>Difícil</td>    
+                    <td align=center>Dois (2)</td> 
+                  </tr>
+              </table>
+
+        <p>Para definir o valor inicial do parâmetro do acerto casual, também chamado mais comumente de 'chute', foi utilizada a probabilidade de acerto ao item para cada tipo de questão oferecida pelo sistema. Nas questões de V ou F foi utilizado o valor de 0,5 (1/2) para definir o acerto casual desse tipo de questão. Nas questões de Múltipla Escolha foi usado o valor de 0,25 (1/4), pois esse tipo de questão no SIAC apresenta apenas quatro alternativas. E finalmente, nas questões de Escolha Múltipla, também com quatro alternativas, foi definido o valor de 0,06 (1/15), pois estas questões apresentam 15 possibilidades de resposta correta.
         </p>
+
+                <table style="border:solid 2px" width=90% height=50% align=center>
+                          <tr>
+                            <th>Tipo de Questão</th>
+                            <th>Prob. Acerto</th>     
+                          </tr>
+                          <tr>
+                            <td align=center>V ou F</td>
+                            <td align=center>0,5</td>    
+                          </tr>
+                          <tr>
+                            <td align=center>Múltipla Escolha</td>
+                            <td align=center>0,25</td> 
+                          </tr>
+                          <tr>
+                            <td align=center>Escolha MúltiplA</td>
+                            <td align=center>0,06 (1/15)</td>
+                          </tr>
+                      </table>
 
         	<figure class="image_center">
         	 	<img src="imagens/aulaDigital.jpg"/>
         	 		<figcaption>Figura 2 - Tecnologia auxiliando o professor dentro da sala de aula.</figcaption>
         	</figure>
 
-        <p>O m&oacute;dulo BDQ permite v&aacute;rias a&ccedil;&otilde;es associadas ao professor, em que atrav&eacute;s dos bot&otilde;es do menu lateral &eacute; poss&iacute;vel: 
-        </p>
+        <p>Após o cadastro de questões, o sistema está apto a realizar os testes. Os passos que o SIAC segue para aplicar a TRI na realização de um teste são os seguintes:
 
           <br>
             <ul>
-                  <li><b><i>Quest&otilde;es:</i></b> cadastrar quest&otilde;es, ver as quest&otilde;es cadastradas, responder quest&otilde;es, ver relatório das quest&otilde;es cadastradas. </li>
-                  <li><b><i>Listas:</i></b> criar listas, ver as listas criadas, responder listas, vincular listas a uma turma, ver relat&oacute;rio das listas criadas e vinculadas.</li>
-                  <li><b><i>Hist&oacute;rico:</i></b> ver o aproveitamento de um aluno ou da turma, ver quantidade de quest&otilde;es respondidas, ver relat&oacute;rios de desempenho, verificar o hist&oacute;rico de um aluno.</li>
-                  <li><b><i>Corre&ccedil;&otilde;es:</i></b> corrigir quest&otilde;es, corrigir listas, ver as quest&otilde;es abertas respondidas por um aluno, pesquisar a corre&ccedil;&atilde;o de quest&otilde;es abertas e listas.</li>
-                  <li><b><i>Teste:</i></b> cadastrar quest&otilde;es de fun&ccedil;&atilde;o avaliativa, pesquisa de quest&otilde;es cadastradas nesse m&oacute;dulo, ver teste realizado por aluno, ver relat&oacute;rios de teste.</li>
+                  <li><b><i>Ao iniciar um novo teste, o sistema solicita ao aluno que informe o nível de conhecimento que ele acredita estar naquele conteúdo em que deseja fazer o teste. Então, três opções são apresentadas ao aluno, sendo elas: Intermediário, Moderado e Avançado. Essas opções definem a habilidade(conhecimento) inicial que o sistema precisa para iniciar a estimativa do conhecimento do aluno.</li>
+                  <li><b><i>Com base nessa habilidade inicial o sistema utiliza a função de informação (equação 05) para buscar o item que possui a maior informação para aquele aluno, ou seja, buscar o item que permita a estimativa adequada do seu nível de conhecimento. Assim, é realizado o cálculo da informação de cada item, que ainda não foi respondido. Esses itens são então apresentados ao estudante para resolução.</li>
+                  <li><b><i>O Aluno responde ao item apresentado, e então o sistema estima sua habilidade usando a fórmula da estimativa de habilidade (equação 02). Este cálculo ocorre utilizando as respostas anteriores bem como a sua habilidade atual, que no primeiro item do teste é a habilidade inicial. Para finalizar a estimativa da habilidade é utilizada outra fórmula (equação 01), que determina a probabilidade do aluno responder corretamente o próximo item. Calculada a estimativa, ela é armazenada para continuar o cálculo da habilidade das próximas questões a serem respondidas.</li>
+                  <li><b><i>Após a estimativa da habilidade é calculado o valor do SE (equação 04) que é um dos critérios de parada do teste.</li>
+                  <li><b><i>Os passos 2, 3 e 4 se repetem até que um dos critérios de parada do teste seja alcançado, sendo eles:</li>
+                    <ol>
+                      <li>Alcançar o valor de SE estipulado pelo administrador do sistema.</li>
+                      <li>Acabar o número de itens não respondidos do conteúdo do teste.</li>
+                    </ol>
              </ul>
+
+             <p>Terminado o teste, a habilidade estimada do aluno retorna dentro de uma faixa de valores que vai de -3 até +3. Com base nesse valor da habilidade uma mensagem de orientação é selecionada de acordo com a habilidade estimada dentro desta faixa de valores.</p>
+
+             <p>Todos os perfis envolvidos terão acesso ao resultado do teste bem como das mensagens de orientação que o estudante recebeu.
+O SIAC permite ainda que o aluno termine um teste inacabado, sendo apresentado a ele uma notificação de que existe um teste não concluído. É facultado ao estudante recomeçar ou descartar o teste não concluído. Caso deseje continuar o teste toda sua habilidade será recalculada através da análise das questões já respondidas e, assim, o teste voltará ao seu estado anterior.</p>
+
+
         
             <!--Pergunta: Como cadastrar uma questao no módulo Teste? -->    
             <br>
