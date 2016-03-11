@@ -24,21 +24,21 @@
             <nav class="float-r">
               <ul class="list-auto">
                  <li>
-                  <a href="#">Home</a>
+                  <a href="teste_introducao.html">Home</a>
+                </li>
+                 <li>
+                  <a href="http://www.se.df.gov.br/">Acesso Institucional</a>
                 </li>
                 <li>
-                  <a href="#">Acesso Institucional</a>
+                  <a href="http://avaliacao.se.df.gov.br/?page_id=236">Acesso ao Moodle</a>
                 </li>
                 <li>
-                  <a href="#">Acesso ao Moodle</a>
+                  <a href="http://sae.se.df.gov.br/sae/">Acesso ao SAE</a>
                 </li>
                 <li>
-                  <a href="#">Acesso ao SAE</a>
-                </li>
- 				<li>
                   <a href="#">Monitoria</a>
                 </li>
-				<li>
+                <li>
                   <a href="#">Colaboradores</a>
                 </li>
               </ul>
@@ -70,15 +70,15 @@
 			<hr />
 				<li><a href="teste_tai.html">Testes Adaptativos Informatizados - TAI</a></li>
 			<hr />
-				<li><a href="teste_bancoDeQuestoesInterativas.html">Pesquisa Teoria de Resposta ao Item</a></li>
+				<li><a href="teste_pesquisa.html">Pesquisa Teoria de Resposta ao Item</a></li>
 			<hr />	
-				<li><a href="bdq_usandoTesteNoSae.html">Usando o Módulo Teste no SAE</a></li>
+				<li><a href="teste_usandoTesteNoSae.html">Usando o Módulo Teste no SAE</a></li>
 			<hr />	
-				<li><a href="bdq_exemplosBDQ.html">Exemplos no BDQ</a></li>
+				<li><a href="teste_exemplosTeste.html">Exemplos no Módulo Teste</a></li>
 			<hr />
-				<li><a href="exercicios/bdq_exerUsandoBDQSae.html">Exerc&iacute;cios Usando BDQ no SAE</a></li>
+				<li><a href="exercicios/teste_exerUsandoNoSAE.html">Exerc&iacute;cios Usando Módulo Teste no SAE</a></li>
 			<hr />
-				<li><a href="bdq_bibliografia.html">Bibliografia</a></li>
+				<li><a href="teste_bibliografia.html">Bibliografia</a></li>
 			<hr />	
 		</ul>
 	</section>
@@ -88,18 +88,19 @@
 			<h2>Usando o Módulo Teste no SAE</h2>
 		 </div>
 
-        <figure class="image_center">
-            <img src="imagens/tecnologiaEducacional.jpeg"/>
-              <figcaption>Figura 1 - Tecnologia na Educa&ccedil;&atilde;o.</figcaption>
-          </figure>
-
         <p>No Módulo Teste, o cadastro de questões é realizado pelo usuário com perfil de professor, onde são informados os dados do enunciado e a respectiva resposta correta da questão (item). Ao cadastrar uma questão, o professor informa o parâmetro da discriminação inicial (pouquíssimo, pouco, muito, muitíssimo), sendo os demais parâmetros iniciais da questão definidos automaticamente de acordo com o tipo de questão a ser cadastrada.
         </p>
+
+          <figure class="image_center">
+            <img src="imagens/professor-e-aluno.jpg"/>
+              <figcaption>Figura 1 - Professor utilizando da tecnologia para acompanhamento do aluno.</figcaption>
+          </figure>
 
         <p>O valor inicial do parâmetro da dificuldade do item foi definido de acordo com o tipo de questão que está sendo cadastrada na base de dados do Módulo Teste. Assim, as questões de V ou F foram classificadas como questões fáceis e atribuídas o valor 0. Já as questões de Múltipla Escolha foram classificadas como questões de dificuldade média e atribuídas o valor 1. E por fim, as questões de Escolha Múltipla foram classificadas como questões difíceis e atribuídas o valor 2, uma vez que esse tipo de questão apresenta quatro alternativas com 15 combinações possíveis de resposta correta para a questão. Cabe ressaltar que a faixa de valores da dificuldade vai de -3 até +3, conforme a TRI.
         </p>
 
-            <table style="border:solid 2px" width=90% height=50% align=center>
+            <br>
+            <table style="border:solid 2px" width=100% height=50%>
                   <tr>
                     <th>Tipo de Questão</th>
                     <th>Dificuldade</th> 
@@ -116,7 +117,7 @@
                     <td align=center>Um (1)</td> 
                   </tr>
                   <tr>
-                    <td align=center>Escolha MúltiplA</td>
+                    <td align=center>Escolha Múltipla</td>
                     <td align=center>Difícil</td>    
                     <td align=center>Dois (2)</td> 
                   </tr>
@@ -125,7 +126,8 @@
         <p>Para definir o valor inicial do parâmetro do acerto casual, também chamado mais comumente de 'chute', foi utilizada a probabilidade de acerto ao item para cada tipo de questão oferecida pelo sistema. Nas questões de V ou F foi utilizado o valor de 0,5 (1/2) para definir o acerto casual desse tipo de questão. Nas questões de Múltipla Escolha foi usado o valor de 0,25 (1/4), pois esse tipo de questão no SIAC apresenta apenas quatro alternativas. E finalmente, nas questões de Escolha Múltipla, também com quatro alternativas, foi definido o valor de 0,06 (1/15), pois estas questões apresentam 15 possibilidades de resposta correta.
         </p>
 
-                <table style="border:solid 2px" width=90% height=50% align=center>
+                <br>
+                <table style="border:solid 2px" width=100% height=50% >
                           <tr>
                             <th>Tipo de Questão</th>
                             <th>Prob. Acerto</th>     
@@ -144,33 +146,27 @@
                           </tr>
                       </table>
 
-        	<figure class="image_center">
-        	 	<img src="imagens/aulaDigital.jpg"/>
-        	 		<figcaption>Figura 2 - Tecnologia auxiliando o professor dentro da sala de aula.</figcaption>
-        	</figure>
-
-        <p>Após o cadastro de questões, o sistema está apto a realizar os testes. Os passos que o SIAC segue para aplicar a TRI na realização de um teste são os seguintes:
-
-          <br>
+        <p>Após o cadastro de questões, o sistema está apto a realizar os testes. Os passos que o Módulo Teste segue para aplicar a TRI na realização de um teste são os seguintes:
+          <br><br>
             <ul>
-                  <li><b><i>Ao iniciar um novo teste, o sistema solicita ao aluno que informe o nível de conhecimento que ele acredita estar naquele conteúdo em que deseja fazer o teste. Então, três opções são apresentadas ao aluno, sendo elas: Intermediário, Moderado e Avançado. Essas opções definem a habilidade(conhecimento) inicial que o sistema precisa para iniciar a estimativa do conhecimento do aluno.</li>
-                  <li><b><i>Com base nessa habilidade inicial o sistema utiliza a função de informação (equação 05) para buscar o item que possui a maior informação para aquele aluno, ou seja, buscar o item que permita a estimativa adequada do seu nível de conhecimento. Assim, é realizado o cálculo da informação de cada item, que ainda não foi respondido. Esses itens são então apresentados ao estudante para resolução.</li>
-                  <li><b><i>O Aluno responde ao item apresentado, e então o sistema estima sua habilidade usando a fórmula da estimativa de habilidade (equação 02). Este cálculo ocorre utilizando as respostas anteriores bem como a sua habilidade atual, que no primeiro item do teste é a habilidade inicial. Para finalizar a estimativa da habilidade é utilizada outra fórmula (equação 01), que determina a probabilidade do aluno responder corretamente o próximo item. Calculada a estimativa, ela é armazenada para continuar o cálculo da habilidade das próximas questões a serem respondidas.</li>
-                  <li><b><i>Após a estimativa da habilidade é calculado o valor do SE (equação 04) que é um dos critérios de parada do teste.</li>
-                  <li><b><i>Os passos 2, 3 e 4 se repetem até que um dos critérios de parada do teste seja alcançado, sendo eles:</li>
-                    <ol>
-                      <li>Alcançar o valor de SE estipulado pelo administrador do sistema.</li>
-                      <li>Acabar o número de itens não respondidos do conteúdo do teste.</li>
-                    </ol>
+                  <li>Ao iniciar um novo teste, o sistema solicita ao aluno que informe o nível de conhecimento que ele acredita estar naquele conteúdo em que deseja fazer o teste. Então, três opções são apresentadas ao aluno, sendo elas: Intermediário, Moderado e Avançado. Essas opções definem a habilidade(conhecimento) inicial que o sistema precisa para iniciar a estimativa do conhecimento do aluno.</li>
+                  <br>
+                  <li>Com base nessa habilidade inicial o sistema utiliza uma função para buscar o item que possui a maior informação para aquele aluno, ou seja, busca o item que permite a estimativa adequada ao nível de conhecimento do aluno. Assim, é realizado o cálculo da informação de cada item, que ainda não foi respondido. Esses itens são então apresentados ao estudante para resolução.</li>
+                  <br>
+                  <li>O Aluno responde ao item apresentado, e então o sistema estima a habilidade do estudante. Este cálculo ocorre utilizando as respostas anteriores, bem como a sua habilidade atual, que no primeiro item do teste é a habilidade inicial. Para finalizar a estimativa da habilidade é utilizada outra equação pelo sistema, que determina a probabilidade do aluno responder corretamente o próximo item. Calculada a estimativa, ela é armazenada para continuar o cálculo da habilidade das próximas questões a serem respondidas.</li>
+
              </ul>
+
+                <figure class="image_center">
+                  <img src="imagens/resultado.png"/>
+                    <figcaption>Figura 2 - Resultado logo ao finalizar o teste.</figcaption>
+                </figure>
 
              <p>Terminado o teste, a habilidade estimada do aluno retorna dentro de uma faixa de valores que vai de -3 até +3. Com base nesse valor da habilidade uma mensagem de orientação é selecionada de acordo com a habilidade estimada dentro desta faixa de valores.</p>
 
-             <p>Todos os perfis envolvidos terão acesso ao resultado do teste bem como das mensagens de orientação que o estudante recebeu.
-O SIAC permite ainda que o aluno termine um teste inacabado, sendo apresentado a ele uma notificação de que existe um teste não concluído. É facultado ao estudante recomeçar ou descartar o teste não concluído. Caso deseje continuar o teste toda sua habilidade será recalculada através da análise das questões já respondidas e, assim, o teste voltará ao seu estado anterior.</p>
+             <p>Todos os perfis envolvidos terão acesso ao resultado do teste bem como das mensagens de orientação que o estudante recebeu. O Módulo Teste permite ainda que o aluno termine um teste inacabado, sendo apresentado a ele uma notificação de que existe um teste não concluído. É facultado ao estudante recomeçar ou descartar o teste não concluído. Caso deseje continuar o teste toda sua habilidade será recalculada através da análise das questões já respondidas e, assim, o teste voltará ao seu estado anterior.</p>
 
 
-        
             <!--Pergunta: Como cadastrar uma questao no módulo Teste? -->    
             <br>
             <h3>Questões no Módulo Teste</h3>
