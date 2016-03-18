@@ -95,7 +95,7 @@
         	 		<figcaption>Figura 1 - O que &eacute; a TRI?</figcaption>
         	</figure>
 
-        <p>A Teoria de Resposta ao Item (TRI) &eacute; um conjunto de modelos matem&aacute;ticos que procuram representar a probabilidade de um indiv&iacute;duo dar determinada resposta a um item como fun&ccedil;&atilde;o dos parâmetros do item e da habilidade do indivíduo. Quanto maior for a habilidade do indiv&iacute;duo maior ser&aacute; a probabilidade de acerto de sua resposta &agrave; quest&atilde;o. Podemos entender habilidade como sendo uma m&eacute;trica para mensurar o qu&atilde;o bom um estudante &eacute; em determinada &aacute;rea do conhecimento. Tendo, nessa &aacute;rea, uma habilidade alta, ter&aacute; tamb&eacute;m uma maior probabilidade de responder corretamente as quest&otilde;es dessa mesma &aacute;rea do conhecimento. 
+        <p>A Teoria de Resposta ao Item (TRI) &eacute; um conjunto de modelos matem&aacute;ticos que procuram representar a probabilidade de um indiv&iacute;duo dar determinada resposta a um item como fun&ccedil;&atilde;o dos par&acirc;metros do item e da habilidade do indiv&iacute;duo. Quanto maior for a habilidade do aprendiz, maior ser&aacute; a probabilidade de acerto de sua resposta &agrave; quest&atilde;o. Pode-se entender a habilidade como sendo uma m&eacute;trica para mensurar o qu&atilde;o bom um estudante &eacute; em determinada &aacute;rea do conhecimento. Tendo, nessa &aacute;rea, uma habilidade alta, ter&aacute; tamb&eacute;m uma maior probabilidade de responder corretamente as quest&otilde;es dessa mesma &aacute;rea do conhecimento. 
         </p>
 
         <p>Segundo Baker (1992), esta habilidade &eacute; conhecida como tra&ccedil;o latente, e &eacute; uma vari&aacute;vel psicol&oacute;gica que n&atilde;o pode ser medida diretamente, como peso e altura. Os tra&ccedil;os latentes s&atilde;o muitas vezes conhecimentos e entendimentos intuitivos e, apesar de n&atilde;o serem comumente observadas de forma direta, s&atilde;o quantificados pela psicometria. A capacidade de realizar opera&ccedil;&otilde;es matem&aacute;ticas e de leitura s&atilde;o exemplos de tra&ccedil;os latentes.
@@ -103,9 +103,9 @@
 
         <p>Segundo Andrade (2000), os modelos da TRI dependem fundamentalmente de tr&ecirc;s fatores:</p>
           <ul>
-            <li>Natureza do item</li> Dicot&ocirc;micos e n&atilde;o dicot&ocirc;micos;
-            <li>N&uacute;mero de grupos de indiv&iacute;duos envolvidos</li> Apenas um ou mais de um; 
-            <li>Quantidade de tra&ccedil;os latentes que est&aacute; sendo medida</li> Apenas um ou mais de um. 
+            <li>Natureza do item</li> &nbsp;&nbsp; Dicot&ocirc;micos e n&atilde;o dicot&ocirc;micos;
+            <li>N&uacute;mero de grupos de indiv&iacute;duos envolvidos</li> &nbsp;&nbsp; Apenas um ou mais de um; 
+            <li>Quantidade de tra&ccedil;os latentes que est&aacute; sendo medida</li> &nbsp;&nbsp; Apenas um ou mais de um. 
           </ul>
 
         <p>Para estimar o fator do acerto casual, tamb&eacute;m chamado mais comumente de 'chute', ser&aacute; usada a probabilidade de acerto ao item para cada tipo de quest&atilde;o oferecida pelo sistema, sendo este tipo no M&oacute;dulo Teste definido como itens de:</p>
@@ -118,6 +118,11 @@
 
         <p>Por fim, para estimar o crit&eacute;rio da discrimina&ccedil;&atilde;o do item s&atilde;o analisados o n&uacute;mero de respostas corretas ao item e a m&eacute;dia das habilidades dos alunos que o responderam. A rela&ccedil;&atilde;o expressa por esses dois valores diz que quanto maior o n&uacute;mero de respostas corretas ao item e maior for a m&eacute;dia das habilidades dos que responderam este item, esses valores est&atilde;o sendo menos significantes para discriminar as habilidades dos novos estudantes.</p>
 
+            <figure class="image_center">
+              <img src="imagens/menorDiscriminacao.png"/>
+              <figcaption>Figura 2 - Relação das entradas de dados para a discriminação de uma habilidade.</figcaption>
+            </figure>
+
         <br>
         <h3>Estimando a Habilidade do Aluno Examinado</h3>
         <p>Dentro da TRI, o principal prop&oacute;sito ao aplicar um teste a um aluno, &eacute; situ&aacute;-lo em uma escala de habilidade. Com isso torna-se poss&iacute;vel avaliar sua habilidade e ainda comparar o desempenho de cada aluno. 
@@ -125,17 +130,22 @@
 
             <figure class="image_center">
               <img src="imagens/alunos.jpg"/>
-                <figcaption>Figura 3 - Estudantes trabalhando em grupo.</figcaption>
+                <figcaption>Figura 3 - Estudantes de diferentes habilidades estudando em grupo.</figcaption>
             </figure>
 
-        <p>O teste usado para essa medi&ccedil;&atilde;o consiste de N itens, cada um desses itens visando avaliar a habilidade do aluno examinado. O resultado deste teste produzir&aacute; um conjunto de respostas com valor de zero ou um para cada item respondido. As respostas com valor 0 significam que o respondente errou o item e as respostas com valor 1 significam que o respondente acertou o item. A lista destes resultados (uns e zeros) para os N itens &eacute; chamada de vetor de resposta ao item do examinado (aluno que fez um teste). Este vetor de resposta e os parâmetros conhecidos de cada item que comp&ocirc;s este teste ser&atilde;o usados para estimar a habilidade ainda n&atilde;o conhecida do aluno examinado. 
+        <p>O teste usado para essa medi&ccedil;&atilde;o consiste de N itens, cada um desses itens visando avaliar a habilidade do aluno examinado. O resultado deste teste produzir&aacute; um conjunto de respostas com valor de zero ou um para cada item respondido. As respostas com valor 0 significam que o respondente errou o item e as respostas com valor 1 significam que o respondente acertou o item. A lista destes resultados (uns e zeros) para os N itens &eacute; chamada de vetor de resposta ao item do examinado (aluno que fez um teste). Este vetor de resposta e os par&acirc;metros conhecidos de cada item que comp&ocirc;s este teste ser&atilde;o usados para estimar a habilidade ainda n&atilde;o conhecida do aluno examinado. 
         </p>
+
+            <figure class="image_center">
+              <img src="imagens/vetorResposta.png"/>
+                <figcaption>Figura 4 - Exemplo de vetor de resposta usado na avaliação de habilidade.</figcaption>
+            </figure>
 
         <p>Como Baker (2001) menciona, &eacute; imposs&iacute;vel estimar a habilidade de um examinado que ao final do teste possua um vetor de respostas contendo todos os valores igual a 1 (um) ou todos os valores iguais a 0 (zero), ou seja, caso ele acerte ou erre todos os itens do teste. Com isso sua habilidade na an&aacute;lise realizada por este teste manter&aacute; seus valores iniciais. </p>
 
               <figure class="image_center">
                 <img src="imagens/tiposDePessoas.jpg"/>
-                  <figcaption>Figura 4 - Diferentes tipos de pessoas.</figcaption>
+                  <figcaption>Figura 5 - Diferentes tipos de pessoas.</figcaption>
               </figure>
 
         <p>A quantidade de quest&otilde;es ou itens de um teste pode influenciar a apura&ccedil;&atilde;o da realidade da informa&ccedil;&atilde;o. Uma &uacute;nica quest&atilde;o, por exemplo, n&atilde;o gera dados suficientes para uma avalia&ccedil;&atilde;o eficiente. O n&uacute;mero ideal de quest&otilde;es em um teste &eacute; obtido por meio das regras de parada da TAI, que s&atilde;o alcance de um n&iacute;vel pr&eacute;-estabelecido de habilidade, quantidade m&aacute;xima de itens em um teste, tempo de teste, entre outros.
